@@ -1,0 +1,337 @@
+/* 我的简历title */
+
+body{
+    background: gray;
+}
+
+.main-area{
+    width: 7.2rem;
+    height: auto;
+    overflow: hidden;
+    margin: 0 auto;
+    background: white;
+}
+
+.cz-title{
+    color: rgb(0, 176, 80);
+    position: relative;
+    font-size: 0.4rem;
+    margin-left: 0.6rem;
+}
+
+.cz-title::after{
+    content: "";
+    position: absolute;
+    width: 0.02rem;
+    height: 90%;
+    background: rgb(0, 176, 80);
+    top: 12%;
+    margin-left: 0.05rem;
+}
+
+/* 顶部分隔线 */
+
+.cz-line{
+    width: 100%;
+    margin-top: 0.1rem;
+    position: relative;
+    height: 0.2rem;
+}
+
+.cz-line-left{
+    position: absolute;
+    width: 60%;
+    height: 0.18rem;
+    background: rgb(0, 176, 80);
+    left: 0;
+}
+
+.cz-line-left::after{
+    content: "";
+    position: absolute;
+    right: 0;
+    width: 0;
+    height: 0;
+    border-top: 0.18rem solid white;
+    border-left: 0.18rem solid rgb(0, 176, 80);
+}
+
+.cz-line-right{
+    position: absolute;
+    width: 40%;
+    left: 61%;
+    background: rgb(146, 208, 80);
+    height: 0.16rem;
+    bottom: 0;
+}
+
+.cz-line-right::after{
+    content: "";
+    position: absolute;
+    left: -0.16rem;
+    width: 0;
+    height: 0;
+    border-bottom: 0.16rem solid transparent;
+    border-right: 0.16rem solid rgb(146, 208, 80);
+}
+
+/* 简历主体部分 */
+.cz-main-block{
+    width: 7.2rem;
+    height: 10rem;
+    margin-top: -0.02rem;
+}
+
+.cz-mian-bgline{
+    width: 6.2rem;
+    height: 10rem;
+    margin-left: 0.5rem;
+    border-left: 1px solid rgb(0, 176, 80);
+    position: relative;
+}
+
+.cz-mian-bgline-1{
+    top: 0.2rem;
+}
+
+/* 基本信息 */
+
+.cz-user-info-block{
+    position: absolute;
+    top: 0.6rem;
+    width: 100%;
+    font-size: 0.14rem;
+}
+
+.cz-user-info-left{
+    width: 2.2rem;
+    position: absolute;
+}
+
+.cz-user-info-left > div{
+    padding: 0 0 0 0.2rem;
+    height: 0.2rem;
+    margin-bottom: 0.1rem;
+}
+
+.cz-user-info-left .cz-user-info-title-left{
+    display: inline-block;
+    text-align: center;
+    padding-right: 0.02rem;
+}
+
+.cz-user-info-left .cz-user-info-word-left{
+    display: inline-block;
+    text-align: left;
+    padding-left: 0.08rem;
+}
+
+.cz-word-auto{
+    display: inline-block;
+    width: 0.26rem;
+}
+
+.cz-user-info-center{
+    width: 2.2rem;
+    position: absolute;
+    left: 2.2rem;
+    top: 0;
+    padding-left: 0.2rem;
+}
+
+.cz-user-info-center .cz-user-info-title-center{
+    display: inline-block;
+    text-align: center;
+    padding-right: 0.02rem;
+    width: 0.6rem;
+}
+
+.cz-user-info-center .cz-user-info-word-center{
+    display: inline-block;
+    text-align: left;
+    padding-left: 0.08rem;
+}
+
+.cz-user-info-center > div{
+    padding: 0 0 0 0.2rem;
+    height: 0.2rem;
+    margin-bottom: 0.1rem;
+}
+
+.cz-user-info-right{
+    width: 0.18rem;
+    position: absolute;
+    left: 4.7rem;
+    top: 0;
+}
+
+.cz-user-img{
+    width: 1rem;
+    height: 1.6rem;
+    background-size: 100% 100%;
+}
+
+/* 教育背景 */
+
+.cz-mian-bgline-2{
+    top: 2.16rem;
+}
+
+.cz-eduction-info-block{
+    font-size: 0.14rem;
+    position: absolute;
+    top: 2.6rem;
+}
+
+.cz-eduction-info-block > div{
+    height: 0.22rem;
+    line-height: 0.22rem;
+    display: inline-block;
+}
+
+.cz-eduction-time{
+    width: 1.5rem;
+    margin-left: 0.3rem;
+    text-align: center;
+}
+
+.cz-eduction-school{
+    width: 1rem;
+    text-align: center;
+    margin-left: 0.5rem;
+}
+
+.cz-eduction-major{
+    width: 2rem;
+    text-align: center;
+    margin-left: 0.5rem;
+}
+
+/* 工作经历 */
+
+.cz-mian-bgline-3{
+    top: 2.95rem;
+}
+
+.cz-work-experience-block{
+    font-size: 0.14rem;
+    position: absolute;
+    top: 3.35rem;
+}
+
+.cz-work-info > div{
+    height: 0.22rem;
+    line-height: 0.22rem;
+    display: inline-block;
+}
+
+.cz-work-time{
+    width: 1.5rem;
+    margin-left: 0.3rem;
+    text-align: center;
+}
+
+.cz-work-compony{
+    width: 2.4rem;
+    margin-left: 0.1rem;
+    text-align: center;
+}
+
+.cz-work-job{
+    width: 1.2rem;
+    margin-left: 0.1rem;
+    text-align: center;
+}
+
+.cz-work-introduce{
+    margin-top: 0.1rem;
+    padding: 0 0.4rem;
+}
+
+.cz-work-introduce-item{
+    position: relative;
+    line-height: 0.22rem;
+    margin-bottom: 0.05rem;
+}
+
+.cz-work-introduce-item::before{
+    content: "";
+    width: 0.06rem;
+    height: 0.06rem;
+    background: black;
+    border-radius: 50%;
+    position: absolute;
+    left: -0.2rem;
+    top: 0.1rem;
+}
+
+/* 专业技能 */
+
+.cz-mian-bgline-4{
+    top: 5.25rem;
+}
+
+.cz-professional-skill-block{
+    position: absolute;
+    top: 5.6rem;
+    font-size: 0.14rem;
+}
+
+.cz-skill-title{
+    margin-left: 0.4rem;
+    position: relative;
+    line-height: 0.3rem;
+}
+
+.cz-skill-title::before{
+    content: "";
+    width: 0.06rem;
+    height: 0.06rem;
+    background: black;
+    border-radius: 50%;
+    position: absolute;
+    left: -0.2rem;
+    top: 0.13rem;
+}
+
+.cz-skill-infoword{
+    padding: 0 0.4rem 0 0.2rem;
+    line-height: 0.22rem;
+    text-indent: 0.2rem;
+}
+
+/* 技能证书 */
+
+.cz-mian-bgline-5{
+    position: absolute;
+    top: 7.8rem;
+}
+
+.cz-skill-certificate-block{
+    position: absolute;
+    top: 8.25rem;
+    font-size: 0.14rem;
+}
+
+.cz-skill-certificate-block > div{
+    padding: 0 0.4rem;
+}
+
+/* 自我评价 */
+
+.cz-mian-bgline-6{
+    position: absolute;
+    top: 8.62rem;
+}
+
+.cz-evaluation-block{
+    position: absolute;
+    top: 9.05rem;
+    font-size: 0.14rem;
+}
+
+.cz-evaluation-block > div{
+    padding: 0 0.4rem 0 0.2rem;
+    text-indent: 0.2rem;
+    line-height: 0.22rem;
+}
